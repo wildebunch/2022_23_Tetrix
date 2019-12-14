@@ -29,7 +29,7 @@ Documentation for the FTC SDK is also included with this repository.  There is a
 
 For technical questions regarding the SDK, please visit the FTC Technology forum:
 
-  http://ftcforum.usfirst.org/forumdisplay.php?156-FTC-Technology
+  http://ftcforum.firstinspires.org/forumdisplay.php?156-FTC-Technology
 
 **************************************************************************************
 
