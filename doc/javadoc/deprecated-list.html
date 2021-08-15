@@ -71,12 +71,33 @@
 <h1 title="Deprecated API" class="title">Deprecated API</h1>
 <h2 title="Contents">Contents</h2>
 <ul>
+<li><a href="#class">Deprecated Classes</a></li>
 <li><a href="#enum">Deprecated Enums</a></li>
 <li><a href="#method">Deprecated Methods</a></li>
 <li><a href="#enum.constant">Deprecated Enum Constants</a></li>
 </ul>
 </div>
-<div class="contentContainer"><a name="enum">
+<div class="contentContainer"><a name="class">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<table class="deprecatedSummary" border="0" cellpadding="3" cellspacing="0" summary="Deprecated Classes table, listing deprecated classes, and an explanation">
+<caption><span>Deprecated Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="com/qualcomm/robotcore/eventloop/opmode/AnnotatedOpModeRegistrar.html" title="class in com.qualcomm.robotcore.eventloop.opmode">com.qualcomm.robotcore.eventloop.opmode.AnnotatedOpModeRegistrar</a>
+<div class="block"><span class="deprecationComment">The function formerly performed by this class is now automatically executed by the system</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="enum">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -108,10 +129,20 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="com/qualcomm/robotcore/hardware/I2cDeviceImpl.html#enableI2cReadMode-com.qualcomm.robotcore.hardware.I2cAddr-int-int-">com.qualcomm.robotcore.hardware.I2cDeviceImpl.enableI2cReadMode(I2cAddr, int, int)</a></td>
+<td class="colOne"><a href="org/firstinspires/ftc/robotcore/external/ClassFactory.html#createVuforiaLocalizer-org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer.Parameters-">org.firstinspires.ftc.robotcore.external.ClassFactory.createVuforiaLocalizer(VuforiaLocalizer.Parameters)</a>
+<div class="block"><span class="deprecationComment">Use <a href="org/firstinspires/ftc/robotcore/external/ClassFactory.html#createVuforia-org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer.Parameters-"><code>ClassFactory.createVuforia(VuforiaLocalizer.Parameters)</code></a> instead</span></div>
+</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><a href="com/qualcomm/robotcore/hardware/I2cDeviceImpl.html#enableI2cReadMode-com.qualcomm.robotcore.hardware.I2cAddr-int-int-">com.qualcomm.robotcore.hardware.I2cDeviceImpl.enableI2cReadMode(I2cAddr, int, int)</a></td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/I2cDeviceImpl.html#enableI2cWriteMode-com.qualcomm.robotcore.hardware.I2cAddr-int-int-">com.qualcomm.robotcore.hardware.I2cDeviceImpl.enableI2cWriteMode(I2cAddr, int, int)</a></td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getCameraDirection--">org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener.getCameraDirection()</a>
+<div class="block"><span class="deprecationComment">This is of little use if a non-builtin camera is in use.</span></div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/I2cDevice.html#getController--">com.qualcomm.robotcore.hardware.I2cDevice.getController()</a>
@@ -127,8 +158,39 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><a href="com/qualcomm/robotcore/util/SerialNumber.html#getSerialNumber--">com.qualcomm.robotcore.util.SerialNumber.getSerialNumber()</a>
-<div class="block"><span class="deprecationComment">no need to use; use toString() if string form is sought</span></div>
+<td class="colOne"><a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getLastTrackedRawPose--">org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener.getLastTrackedRawPose()</a>
+<div class="block"><span class="deprecationComment">use <a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getLastTrackedPoseVuforiaCamera--"><code>VuforiaTrackableDefaultListener.getLastTrackedPoseVuforiaCamera()</code></a> instead</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getPhoneLocationOnRobot--">org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener.getPhoneLocationOnRobot()</a>
+<div class="block"><span class="deprecationComment">Using <a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getCameraLocationOnRobot-CameraName-"><code>VuforiaTrackableDefaultListener.getCameraLocationOnRobot(CameraName)</code></a> is a better choice.</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotorEx.html#getPIDCoefficients-com.qualcomm.robotcore.hardware.DcMotor.RunMode-">com.qualcomm.robotcore.hardware.DcMotorEx.getPIDCoefficients(DcMotor.RunMode)</a>
+<div class="block"><span class="deprecationComment">Use <code>#getPIDFCoefficients(RunMode)</code> instead</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotorControllerEx.html#getPIDCoefficients-int-com.qualcomm.robotcore.hardware.DcMotor.RunMode-">com.qualcomm.robotcore.hardware.DcMotorControllerEx.getPIDCoefficients(int, DcMotor.RunMode)</a>
+<div class="block"><span class="deprecationComment">Use <a href="com/qualcomm/robotcore/hardware/DcMotorControllerEx.html#getPIDFCoefficients-int-com.qualcomm.robotcore.hardware.DcMotor.RunMode-"><code>DcMotorControllerEx.getPIDFCoefficients(int, DcMotor.RunMode)</code></a> instead</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getPoseCorrectionMatrix-org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer.CameraDirection-">org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener.getPoseCorrectionMatrix(VuforiaLocalizer.CameraDirection)</a>
+<div class="block"><span class="deprecationComment">These phone-based matrices are no longer of much relevance, as the
+             correct values, when of interest, are fixed and known.</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getRawPose--">org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener.getRawPose()</a>
+<div class="block"><span class="deprecationComment">use <a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getVuforiaCameraFromTarget--"><code>VuforiaTrackableDefaultListener.getVuforiaCameraFromTarget()</code></a> instead</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getRawUpdatedPose--">org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener.getRawUpdatedPose()</a>
+<div class="block"><span class="deprecationComment">use <a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#getUpdatedVuforiaCameraFromTarget--"><code>VuforiaTrackableDefaultListener.getUpdatedVuforiaCameraFromTarget()</code></a> instead</span></div>
 </td>
 </tr>
 <tr class="altColor">
@@ -139,6 +201,16 @@
 <tr class="rowColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotor.RunMode.html#migrate--">com.qualcomm.robotcore.hardware.DcMotor.RunMode.migrate()</a>
 <div class="block"><span class="deprecationComment">Replace use of old constants with new</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/qualcomm/ftccommon/SoundPlayer.html#play-android.content.Context-int-">com.qualcomm.ftccommon.SoundPlayer.play(Context, int)</a>
+<div class="block"><span class="deprecationComment">use <a href="com/qualcomm/ftccommon/SoundPlayer.html#startPlaying-android.content.Context-int-"><code>SoundPlayer.startPlaying(Context, int)</code></a> instead</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/qualcomm/ftccommon/SoundPlayer.html#play-android.content.Context-int-boolean-">com.qualcomm.ftccommon.SoundPlayer.play(Context, int, boolean)</a>
+<div class="block"><span class="deprecationComment">use <code>#startPlaying(Context, int, PlaySoundParams, Consumer, Runnable)</code> instead</span></div>
 </td>
 </tr>
 <tr class="altColor">
@@ -153,25 +225,43 @@
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/I2cController.html#readI2cCacheFromModule-int-">com.qualcomm.robotcore.hardware.I2cController.readI2cCacheFromModule(int)</a></td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><a href="com/qualcomm/robotcore/eventloop/opmode/AnnotatedOpModeRegistrar.html#register-com.qualcomm.robotcore.eventloop.opmode.OpModeManager-">com.qualcomm.robotcore.eventloop.opmode.AnnotatedOpModeRegistrar.register(OpModeManager)</a>
+<div class="block"><span class="deprecationComment">functionality now automatically called by the system</span></div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/DigitalChannelController.html#setDigitalChannelMode-int-com.qualcomm.robotcore.hardware.DigitalChannelController.Mode-">com.qualcomm.robotcore.hardware.DigitalChannelController.setDigitalChannelMode(int, DigitalChannelController.Mode)</a>
 <div class="block"><span class="deprecationComment">use <a href="com/qualcomm/robotcore/hardware/DigitalChannelController.html#setDigitalChannelMode-int-com.qualcomm.robotcore.hardware.DigitalChannel.Mode-"><code>DigitalChannelController.setDigitalChannelMode(int, DigitalChannel.Mode)</code></a> instead</span></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/I2cDeviceSynchImpl.html#setI2cAddr-com.qualcomm.robotcore.hardware.I2cAddr-">com.qualcomm.robotcore.hardware.I2cDeviceSynchImpl.setI2cAddr(I2cAddr)</a></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/I2cDeviceSynchSimple.html#setI2cAddr-com.qualcomm.robotcore.hardware.I2cAddr-">com.qualcomm.robotcore.hardware.I2cDeviceSynchSimple.setI2cAddr(I2cAddr)</a>
 <div class="block"><span class="deprecationComment">Use <a href="com/qualcomm/robotcore/hardware/I2cAddrConfig.html#setI2cAddress-com.qualcomm.robotcore.hardware.I2cAddr-"><code>I2cAddrConfig.setI2cAddress(I2cAddr)</code></a> instead.</span></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/DigitalChannel.html#setMode-com.qualcomm.robotcore.hardware.DigitalChannelController.Mode-">com.qualcomm.robotcore.hardware.DigitalChannel.setMode(DigitalChannelController.Mode)</a>
 <div class="block"><span class="deprecationComment">use <a href="com/qualcomm/robotcore/hardware/DigitalChannel.html#setMode-com.qualcomm.robotcore.hardware.DigitalChannel.Mode-"><code>DigitalChannel.setMode(Mode)</code></a> instead</span></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/DigitalChannelImpl.html#setMode-com.qualcomm.robotcore.hardware.DigitalChannelController.Mode-">com.qualcomm.robotcore.hardware.DigitalChannelImpl.setMode(DigitalChannelController.Mode)</a></td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotorEx.html#setPIDCoefficients-com.qualcomm.robotcore.hardware.DcMotor.RunMode-com.qualcomm.robotcore.hardware.PIDCoefficients-">com.qualcomm.robotcore.hardware.DcMotorEx.setPIDCoefficients(DcMotor.RunMode, PIDCoefficients)</a>
+<div class="block"><span class="deprecationComment">Use <code>#setPIDFCoefficients(RunMode, PIDFCoefficients)</code> instead</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotorControllerEx.html#setPIDCoefficients-int-com.qualcomm.robotcore.hardware.DcMotor.RunMode-com.qualcomm.robotcore.hardware.PIDCoefficients-">com.qualcomm.robotcore.hardware.DcMotorControllerEx.setPIDCoefficients(int, DcMotor.RunMode, PIDCoefficients)</a>
+<div class="block"><span class="deprecationComment">Use <a href="com/qualcomm/robotcore/hardware/DcMotorControllerEx.html#setPIDFCoefficients-int-com.qualcomm.robotcore.hardware.DcMotor.RunMode-com.qualcomm.robotcore.hardware.PIDFCoefficients-"><code>DcMotorControllerEx.setPIDFCoefficients(int, DcMotor.RunMode, PIDFCoefficients)</code></a> instead</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/firstinspires/ftc/robotcore/external/navigation/VuforiaTrackableDefaultListener.html#setPoseCorrectionMatrix-org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer.CameraDirection-org.firstinspires.ftc.robotcore.external.matrices.OpenGLMatrix-">org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener.setPoseCorrectionMatrix(VuforiaLocalizer.CameraDirection, OpenGLMatrix)</a></td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotor.html#setPowerFloat--">com.qualcomm.robotcore.hardware.DcMotor.setPowerFloat()</a>
@@ -239,16 +329,21 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colOne"><a href="com/qualcomm/robotcore/hardware/MotorControlAlgorithm.html#LegacyPID">com.qualcomm.robotcore.hardware.MotorControlAlgorithm.LegacyPID</a>
+<div class="block"><span class="deprecationComment">Switch to <a href="com/qualcomm/robotcore/hardware/MotorControlAlgorithm.html#PIDF"><code>MotorControlAlgorithm.PIDF</code></a> instead</span></div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotor.RunMode.html#RESET_ENCODERS">com.qualcomm.robotcore.hardware.DcMotor.RunMode.RESET_ENCODERS</a>
 <div class="block"><span class="deprecationComment">Use <a href="com/qualcomm/robotcore/hardware/DcMotor.RunMode.html#STOP_AND_RESET_ENCODER"><code>DcMotor.RunMode.STOP_AND_RESET_ENCODER</code></a> instead</span></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotor.RunMode.html#RUN_USING_ENCODERS">com.qualcomm.robotcore.hardware.DcMotor.RunMode.RUN_USING_ENCODERS</a>
 <div class="block"><span class="deprecationComment">Use <a href="com/qualcomm/robotcore/hardware/DcMotor.RunMode.html#RUN_USING_ENCODER"><code>DcMotor.RunMode.RUN_USING_ENCODER</code></a> instead</span></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="com/qualcomm/robotcore/hardware/DcMotor.RunMode.html#RUN_WITHOUT_ENCODERS">com.qualcomm.robotcore.hardware.DcMotor.RunMode.RUN_WITHOUT_ENCODERS</a>
 <div class="block"><span class="deprecationComment">Use <a href="com/qualcomm/robotcore/hardware/DcMotor.RunMode.html#RUN_WITHOUT_ENCODER"><code>DcMotor.RunMode.RUN_WITHOUT_ENCODER</code></a> instead</span></div>
 </td>
