@@ -15,8 +15,6 @@ public class AutoMode extends RobotOpMode {
 
         controller.init();
 
-        while (isActive()) {
-
-        }
+        controller.lift(10);
     }
 }
