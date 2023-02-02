@@ -7,7 +7,7 @@ public class AutoMode extends RobotOpMode {
     @Override
     public void runOpMode() {
         RobotController controller = new RobotController(this)
-                .config("driver", "lift", "grabber", "imu");
+                .config("drive", "lift", "grabber", "imu");
 
         telemetry.addData("Mode", "Waiting for start...");
         telemetry.update();
@@ -16,5 +16,7 @@ public class AutoMode extends RobotOpMode {
         controller.init();
 
         controller.lift(10);
+        controller.rotate(90);
+        controller.forward(10);
     }
 }

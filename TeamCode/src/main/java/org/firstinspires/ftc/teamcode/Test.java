@@ -24,16 +24,6 @@ public class Test extends LinearOpMode {
         final DcMotor FLMotor, FRMotor, BLMotor, BRMotor, LiftMotor;
         BNO055IMU imu;
 
-        FLMotor         = hardwareMap.dcMotor.get("front_left_motor");
-        FRMotor         = hardwareMap.dcMotor.get("front_right_motor");
-        BLMotor         = hardwareMap.dcMotor.get("back_left_motor");
-        BRMotor         = hardwareMap.dcMotor.get("back_right_motor");
-
-        FLMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        FRMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        BLMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        BRMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-
         BNO055IMU.Parameters param = new BNO055IMU.Parameters();
         param.mode = BNO055IMU.SensorMode.IMU;
         param.angleUnit = BNO055IMU.AngleUnit.DEGREES;
@@ -75,11 +65,6 @@ public class Test extends LinearOpMode {
                 deltaAngle -= 360;
 
             power = Math.max(Math.min(deltaAngle / 25, 1), -1);
-
-/*            FLMotor.setPower(power);
-            FRMotor.setPower(power);
-            BLMotor.setPower(power);
-            BRMotor.setPower(power);*/
 
             telemetry.addLine("==== Angle ====");
             telemetry.addData("Delta", "" + (deltaAngle));
